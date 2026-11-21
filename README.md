@@ -1,7 +1,6 @@
 # Student Laptop Finder
 
-**SW302 - User Interface Development, Assignment 2**  
-**Student:** Ahmed Ibrahim  
+**SW302 - User Interface Development, Assignment 2**    
 **GitHub Repository:** https://github.com/AHM575/Student-Laptop-Finder
 
 This website helps students look through laptop models, check their specifications, save favorites, and compare up to four laptops. The laptop information is loaded from `data/laptops.json`. Favorites and the selected theme are saved in the browser.
