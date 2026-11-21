@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare | Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="flex min-h-screen flex-col">
+  <header id="site-header" class="sticky top-0 z-20 border-b border-border bg-surface"></header>
+
+  <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+    <h1 class="text-3xl font-extrabold">Compare laptops</h1>
+    <p class="mt-1 text-muted">Choose 2 to 4 laptops from your favorites. The best value in each row is marked "Best".</p>
+
+    <div class="mt-6 flex items-center justify-between gap-3">
+      <h2 class="text-xl font-bold">Your favorites</h2>
+      <p id="selected-count" class="font-semibold text-accent" role="status"></p>
+    </div>
+    <p id="compare-msg" role="alert" class="mt-2 min-h-6 font-semibold text-accent"></p>
+    <div id="picker" class="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4"></div>
+
+    <section id="table-box" class="mt-8" aria-label="Comparison table"></section>
+  </main>
+
+  <footer id="site-footer" class="border-t border-border bg-surface"></footer>
+
+  <script type="module" src="src/js/comparePage.js"></script>
+</body>
+</html>

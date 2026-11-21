@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites | Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="flex min-h-screen flex-col">
+  <header id="site-header" class="sticky top-0 z-20 border-b border-border bg-surface"></header>
+
+  <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h1 class="text-3xl font-extrabold">My favorites</h1>
+        <p class="mt-1 text-muted">Saved on this device, so they stay after you reload.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="compare.html" class="btn-action">Compare favorites</a>
+        <button id="clear-btn" type="button" class="btn-outline">Clear all</button>
+      </div>
+    </div>
+
+    <section id="summary" class="mt-6 hidden grid grid-cols-1 gap-4 sm:grid-cols-3" aria-label="Favorites summary">
+      <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Saved laptops</p><p id="fav-count" class="mt-1 text-2xl font-extrabold text-accent"></p></div>
+      <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Total price</p><p id="fav-total" class="mt-1 text-2xl font-extrabold text-accent"></p></div>
+      <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Average price</p><p id="fav-average" class="mt-1 text-2xl font-extrabold text-accent"></p></div>
+    </section>
+
+    <div id="fav-list" class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+    <div id="empty" role="status" class="mt-6 hidden rounded-xl border border-dashed border-border bg-surface p-8 text-center">
+      <p class="mb-4 text-lg">You have no favorites yet. Tap the heart on a laptop to save it.</p>
+      <a href="laptops.html" class="btn-action">Browse laptops</a>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="border-t border-border bg-surface"></footer>
+
+  <script type="module" src="src/js/favorites.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="flex min-h-screen flex-col">
+  <header id="site-header" class="sticky top-0 z-20 border-b border-border bg-surface"></header>
+
+  <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+    <section class="rounded-2xl border border-border bg-surface p-8 text-center sm:p-12">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">Find the right laptop for <span class="text-accent">student life</span></h1>
+      <p class="mx-auto mt-4 max-w-2xl text-muted">Browse laptops, search and filter them, read the full specifications, save your favorites and compare them side by side. Use the switch in the header to move between Performance Mode and Battery Saver Mode.</p>
+      <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="laptops.html" class="btn-action">Browse laptops</a>
+        <a href="favorites.html" class="btn-outline">My favorites</a>
+      </div>
+    </section>
+
+    <section class="mt-10" aria-labelledby="stats-title">
+      <h2 id="stats-title" class="mb-4 text-2xl font-bold">App statistics</h2>
+      <div id="stats" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Laptops in the catalogue</p><p id="stat-count" class="mt-1 text-3xl font-extrabold text-accent">...</p></div>
+        <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Lowest price</p><p id="stat-price" class="mt-1 text-3xl font-extrabold text-accent">...</p></div>
+        <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Longest battery life</p><p id="stat-battery" class="mt-1 text-3xl font-extrabold text-accent">...</p></div>
+        <div class="rounded-xl border border-border bg-surface p-5"><p class="text-sm text-muted">Saved favorites</p><p id="stat-favs" class="mt-1 text-3xl font-extrabold text-accent">...</p></div>
+      </div>
+    </section>
+
+    <section class="mt-10" aria-labelledby="pages-title">
+      <h2 id="pages-title" class="mb-4 text-2xl font-bold">Explore the app</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <a href="laptops.html" class="laptop-card p-5"><span class="mt-2 text-lg font-bold">Laptops</span><span class="text-sm text-muted">Search, filter and sort the whole catalogue.</span></a>
+        <a href="details?id=1" class="laptop-card p-5"></a><span class="mt-2 text-lg font-bold">Details</span><span class="text-sm text-muted">See the full specifications of one laptop.</span></a>
+        <a href="favorites.html" class="laptop-card p-5"><span class="mt-2 text-lg font-bold">Favorites</span><span class="text-sm text-muted">Your saved laptops, total and average price.</span></a>
+        <a href="compare.html" class="laptop-card p-5"><span class="mt-2 text-lg font-bold">Compare</span><span class="text-sm text-muted">Put 2 to 4 favorites side by side.</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="border-t border-border bg-surface"></footer>
+
+  <script type="module" src="src/js/home.js"></script>
+</body>
+</html>
