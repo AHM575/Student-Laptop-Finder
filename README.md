@@ -1,46 +1,63 @@
 # Student Laptop Finder
 
-SW302 - User Interface Development, Assignment 2  
-Student: Ahmed Ibrahim  
-GitHub: Add your repository link here before submission.
+**SW302 - User Interface Development, Assignment 2**  
+**Student:** Ahmed Ibrahim  
+**GitHub Repository:** https://github.com/AHM575/Student-Laptop-Finder
 
-This website helps students look through laptop models, check their specifications, save favorites and compare up to four laptops. The laptop information is loaded from `data/laptops.json`. Favorites and the selected theme are saved in the browser.
+This website helps students look through laptop models, check their specifications, save favorites, and compare up to four laptops. The laptop information is loaded from `data/laptops.json`. Favorites and the selected theme are saved in the browser.
 
-## Install and build
+## Install and Build
+
+Install the project dependencies:
 
 ```bash
 npm install
+```
+
+Build the CSS:
+
+```bash
 npm run build
 ```
 
-To rebuild the CSS while editing, run:
+To rebuild the CSS automatically while editing, run:
 
 ```bash
 npm run watch
 ```
 
-## Run the website
+## Run the Website
 
-Open the project folder in VS Code and start Live Server from `index.html`. A local server is needed because the app loads the JSON file with `fetch()`.
+Open the project folder in VS Code and start Live Server from `index.html`.
+
+A local server is needed because the app loads the JSON file using `fetch()`.
 
 ## Pages
 
-- `index.html` - home page and laptop statistics
-- `laptops.html` - laptop list, search, filters and sorting
-- `details.html?id=1` - details for one laptop
-- `favorites.html` - saved laptops and price summary
-- `compare.html` - compare two to four saved laptops
+- `index.html` - Home page and laptop statistics.
+- `laptops.html` - Laptop list, search, filters, and sorting.
+- `details.html?id=1` - Details for one laptop.
+- `favorites.html` - Saved laptops and price summary.
+- `compare.html` - Compare two to four saved laptops.
 
-## Main JavaScript files
+## Main JavaScript Files
 
-- `api.js` loads the laptop data.
-- `storage.js` saves favorites, comparison choices and the theme.
-- `ui.js` builds the shared header, footer and laptop cards.
-- `compare.js` creates the comparison table.
-- The other files control their own pages.
+- `api.js` - Loads the laptop data.
+- `storage.js` - Saves favorites, comparison choices, and the theme.
+- `ui.js` - Builds the shared header, footer, and laptop cards.
+- `compare.js` - Creates the comparison table.
+- The other JavaScript files control their respective pages.
 
-The project uses Tailwind CSS 4, the Forms and Typography plugins, and two color themes.
+## Technologies Used
 
-## Laptop images
+- HTML
+- JavaScript (ES Modules)
+- Tailwind CSS 4
+- LocalStorage
+- JSON and Fetch API
+
+The project also uses the Tailwind Forms and Typography plugins and supports light and dark themes.
+
+## Laptop Images
 
 The `assets` folder contains `laptop-1.jpg` through `laptop-22.jpg`.
